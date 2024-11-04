@@ -3,22 +3,11 @@ const mongoose = require('mongoose');
 // Connect to MongoDB using environment variables (recommended for security)
 require('dotenv').config();
 const mongoURI = process.env.MONGODB_URI;
-
-(async () => {
-  try {
-    await mongoose.connect(mongoURI, {
-      useNewUrlParser: true, // Use the new MongoDB URL parser
-      useUnifiedTopology: true, // Use the new MongoDB driver's connection management
-    });
-    console.log('MongoDB Connected Successfully');
-  } catch (error) {
-    console.error('MongoDB Connection Error:', error);
-    process.exit(1); // Exit the application on connection failure
-  }
-})();
+///////////
+     mongoose.connect(mongoURI)
 
 // Define the user schema
-const userSchema = new mongoose.Schema({
+const userSchema =mongoose.Schema({
   user_name: String,
   email: String,
   password: String,
