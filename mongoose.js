@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 //require('dotenv').config();
 //const mongoURI = process.env.MONGODB_URI;
 ///////////
-     mongoose.connect("mongodb+srv://lalatendumaharana0:lala1234@cluster0.vnbsj.mongodb.net/")
-
+    // mongoose.connect("mongodb+srv://lalatendumaharana0:lala1234@cluster0.vnbsj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    mongoose.connect("mongodb+srv://lalatendumaharana0:lalatendu933@cluster0.vnbsj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 // Define the user schema
 const userSchema =mongoose.Schema({
   user_name: String,
