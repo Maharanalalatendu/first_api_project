@@ -1,7 +1,7 @@
 let exp=require('express');
 let dbschema=require('./mongoose');
 let app=exp();
-require('dotenv').config();
+//require('dotenv').config();
 
 app.use(exp.urlencoded({extended:false}));//middle ware using for req.body
 
