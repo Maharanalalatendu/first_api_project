@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB using environment variables (recommended for security)
-require('dotenv').config();
-const mongoURI = process.env.MONGODB_URI;
+//require('dotenv').config();
+//const mongoURI = process.env.MONGODB_URI;
 ///////////
-     mongoose.connect(mongoURI)
+     mongoose.connect("mongodb+srv://lalatendumaharana0:lala1234@cluster0.vnbsj.mongodb.net/")
 
 // Define the user schema
 const userSchema =mongoose.Schema({
